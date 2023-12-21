@@ -1,4 +1,4 @@
-fastapi==<latest_version>
-pydantic==<latest_version>
-uvicorn==<latest_version>
+fastapi==0.68.1
+uvicorn==0.15.0
+pydantic==1.9.1
 requests==2.26.0
