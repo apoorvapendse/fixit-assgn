@@ -8,7 +8,6 @@ const Home = () => {
 
 
     const [email,setEmail] = useState("");
-
 async function handleLogin(){
     try {
         
@@ -32,7 +31,7 @@ function handleLogout(){
 
   useEffect(() => {
     const checkEmail = localStorage.getItem("email");
-    if(checkEmail){
+    if(checkEmail!==""){
         setEmail(checkEmail);
     }
 
@@ -43,8 +42,8 @@ function handleLogout(){
       chars,
       {
         color: 'gray',
-        y: 1,
         opacity: 0.2,
+        y: 0.5,
       },
       {
         y: 0,
@@ -53,8 +52,8 @@ function handleLogout(){
         WebkitTextFillColor: 'rgb(212,233,255)',
         
         opacity: 1,
-        stagger: 0.06,
-        duration: 1,
+        stagger: 0.08,
+        duration: 1.2,
         ease: 'power4.out',
       }
     );
